@@ -35,8 +35,6 @@
             document.body.style.fontSize = 12 * ratio + "px";
         }, false);
 
-    initPage();
-
     function initPage() {
         var htmlWidth = root.getBoundingClientRect().width;
 
@@ -44,4 +42,6 @@
         window.rem = htmlWidth / 16;
         root.style.fontSize = window.rem + "px";
     }
+
+    initPage();
 })();
